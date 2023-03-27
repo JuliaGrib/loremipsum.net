@@ -1,5 +1,9 @@
-@mixin flex-row-between {
+@mixin flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
 }

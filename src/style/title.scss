@@ -1,0 +1,14 @@
+.title {
+  margin: 0;
+
+  &_banner {
+    max-width: 615px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  &_main-color {
+    color: $main-color;
+  }
+}

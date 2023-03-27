@@ -1,7 +1,10 @@
 .header {
+  position: fixed;
+  width: 100%;
   background-color: $main-bg;
   &__wrapper {
-    @include flex-row-between;
+    @include flex-row;
+    justify-content: space-between;
     align-items: center;
     padding: $padding-l 0;
 

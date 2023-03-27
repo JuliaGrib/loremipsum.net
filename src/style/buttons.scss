@@ -1,0 +1,30 @@
+.button {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  transition: $transition;
+  cursor: pointer;
+
+  &_banner {
+    width: 183px;
+    padding: 1rem 0;
+    border: none;
+  }
+
+  &_main {
+    background-color: $main-color;
+    color: $white;
+  }
+
+  &_secondary {
+    background-color: $white;
+    border: 0.1rem solid $dark-grey;
+
+    &:hover {
+      border: 0.1rem solid $main-color;
+      background-color: $main-color;
+      color: $white;
+    }
+  }
+}
