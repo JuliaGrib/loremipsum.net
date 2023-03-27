@@ -21,4 +21,15 @@
   &_main-color {
     color: $main-color;
   }
+
+  &_order {
+    font-size: 36px;
+    line-height: 43px;
+    color: $white;
+
+    @media screen and (max-width: 660px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
 }
