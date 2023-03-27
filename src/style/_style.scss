@@ -1,15 +1,12 @@
-body {
-  font-family: 'Montserrat';
-  background-color: $back;
-  color: $text;
-  display: flex;
+html {
+  font-size: 16px;
 }
 
-.image {
-  width: 500px;
-  height: 300px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../img/methed.jpg');
+body {
+  font-family: 'Lato';
+}
+
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
 }

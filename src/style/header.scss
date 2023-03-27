@@ -1,0 +1,15 @@
+.header {
+  background-color: $main-bg;
+  &__wrapper {
+    @include flex-row-between;
+    align-items: center;
+    padding: $padding-l 0;
+  }
+
+  &__list {
+    display: flex;
+
+    gap: $gap-XXXL;
+    list-style-type: none;
+  }
+}

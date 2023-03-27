@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+
+  &:hover {
+    color: $main-color;
+    transition: $transition;
+  }
+
+  &_header {
+    color: $white;
+  }
+
+  &_active {
+    color: $main-color;
+  }
+}
