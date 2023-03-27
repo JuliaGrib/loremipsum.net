@@ -4,12 +4,28 @@
     @include flex-row-between;
     align-items: center;
     padding: $padding-l 0;
+
+    @media screen and (max-width: 1024px) {
+      padding: $padding 0;
+    }
   }
 
   &__list {
     display: flex;
-
     gap: $gap-XXXL;
     list-style-type: none;
+
+    @media screen and (max-width: 1024px) {
+      gap: $gap-m;
+    }
+
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
+  }
+
+  &__list-elem {
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 }

@@ -1,0 +1,10 @@
+.logo {
+  &__img {
+    @media screen and (max-width: 1024px) {
+      width: 200px;
+    }
+    @media screen and (max-width: 375px) {
+      width: 180px;
+    }
+  }
+}

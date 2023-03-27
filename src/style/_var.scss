@@ -4,9 +4,11 @@ $black: #000000;
 $white: #ffffff;
 
 $padding: 1rem;
+$padding-m: calc(($padding) * 1.5);
 $padding-l: calc(($padding) * 1.85);
 
 $gap: 1rem;
+$gap-m: calc(($gap) * 1.5);
 $gap-XXXL: calc(($gap) * 3.75);
 
 $transition: 0.3s;
