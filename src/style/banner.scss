@@ -5,10 +5,26 @@
 
   &__wrapper {
     padding: 203px 0;
+
+    @media screen and (max-width: 1240px) {
+      padding: 120px 50px 100px;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 100px 20px 70px;
+    }
+
+    @media screen and (max-width: 350px) {
+      padding: 90px 0px 50px;
+    }
   }
 
   &__info {
     padding: 2.5rem 0 0 0;
+
+    @media screen and (max-width: 680px) {
+      max-width: 500px;
+      padding: 2rem 0 0 0;
+    }
   }
 
   &__list {
@@ -28,5 +44,17 @@
     @include flex-row;
     gap: 1.8rem;
     padding: 80px 0 0 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 50px 0 0 0;
+    }
+
+    @media screen and (max-width: 680px) {
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+    }
   }
 }
