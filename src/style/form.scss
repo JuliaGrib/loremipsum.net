@@ -107,3 +107,26 @@
     }
   }
 }
+
+input[type='range'] {
+  background-color: #f5f7f6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ffffff;
+  height: 6px;
+  border-radius: 5px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 23px;
+
+    height: 23px;
+    background: #42a9ed;
+    border: 3px solid #286690;
+    border-radius: 50%;
+  }
+}
