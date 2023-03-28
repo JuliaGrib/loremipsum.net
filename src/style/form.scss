@@ -10,6 +10,25 @@
       justify-content: center;
     }
   }
+
+  &__range-block {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 15px;
+
+    grid-column: 1/3;
+
+    @media screen and (max-width: 768px) {
+      grid-column: 1;
+    }
+  }
+
+  &__range-value {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.85);
+  }
 }
 
 .input {
@@ -32,10 +51,6 @@
 
 .range {
   grid-column: 1/3;
-
-  @media screen and (max-width: 768px) {
-    grid-column: 1;
-  }
 }
 
 .select {
