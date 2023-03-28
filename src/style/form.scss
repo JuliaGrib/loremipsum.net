@@ -130,3 +130,29 @@ input[type='range'] {
     border-radius: 50%;
   }
 }
+
+//////////////////////////////////////////////////////////
+
+.input-file {
+  position: relative;
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__desc {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #272733;
+  }
+}
+
+.input-file input[type='file'] {
+  position: absolute;
+  z-index: -1;
+}
