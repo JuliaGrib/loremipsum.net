@@ -60,10 +60,18 @@
   border: 1px solid $white;
   border-radius: $border-radius-s;
   background-color: $bg-light-grey;
+  transition: $transition;
+  cursor: pointer;
 
   &_active {
     background: rgba(61, 64, 80, 0.85);
     border: 1px solid rgba(61, 64, 80, 0.85);
+  }
+
+  &__desc {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__current {
@@ -72,7 +80,17 @@
     color: #272733;
 
     &_active {
-      color: #ffffff;
+      color: $white;
+    }
+  }
+
+  &__icon {
+    fill: $black;
+    transition: $transition;
+
+    &_active {
+      rotate: (180deg);
+      fill: $white;
     }
   }
 
@@ -88,6 +106,10 @@
     background-color: #272733;
     max-height: 220px;
     overflow-y: scroll;
+
+    &_active {
+      display: grid;
+    }
 
     &::-webkit-scrollbar {
       width: 0;

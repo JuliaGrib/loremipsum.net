@@ -1,5 +1,5 @@
-let range = document.querySelector('.range');
-let rangeValue = document.querySelector('.form__range-value');
+const range = document.querySelector('.range');
+const rangeValue = document.querySelector('.form__range-value');
 
 range.addEventListener('input', setRange);
 
