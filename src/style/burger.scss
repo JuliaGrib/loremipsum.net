@@ -1,0 +1,30 @@
+.burger {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70vw;
+  height: 100vh;
+  background-color: #3d4050;
+  transition: transition;
+
+  &_active {
+    right: 0;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 20px;
+    padding: 100px 0 0 30px;
+    list-style: none;
+  }
+}
+
+.burger-icon {
+  display: none;
+  position: relative;
+  z-index: 1000;
+
+  @media screen and (max-width: 680px) {
+    display: block;
+  }
+}
