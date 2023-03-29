@@ -1,0 +1,60 @@
+.banner {
+  background-image: url(../img/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    padding: 12.6rem 0;
+
+    @media screen and (max-width: 1240px) {
+      padding: 7.5rem 3rem 6.25rem;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 6.25rem $padding-sm 4.3rem;
+    }
+
+    @media screen and (max-width: 350px) {
+      padding: 5.6rem 0px 3rem;
+    }
+  }
+
+  &__info {
+    padding: 2.5rem 0 0 0;
+
+    @media screen and (max-width: 680px) {
+      max-width: 500px;
+      padding: 2rem 0 0 0;
+    }
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 0.3rem;
+    padding: 0.6rem 0 0 0;
+    list-style-type: none;
+  }
+
+  &__list-elem {
+    &:before {
+      content: '-';
+    }
+  }
+
+  &__btns {
+    @include flex-row;
+    gap: 1.8rem;
+    padding: 5rem 0 0 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 3rem 0 0 0;
+    }
+
+    @media screen and (max-width: 680px) {
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+    }
+  }
+}

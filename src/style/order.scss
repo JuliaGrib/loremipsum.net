@@ -1,0 +1,79 @@
+.order {
+  padding: 7.5rem 0 9rem 0;
+  background-image: url(../img/country.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    padding: 5.6rem 0 7.5rem 0;
+  }
+
+  @media screen and (max-width: 660px) {
+    padding: 3.75rem 0 5rem 0;
+  }
+
+  &__wrapper {
+    @include flex-column;
+    gap: $gap-XXXXXL;
+
+    @media screen and (max-width: 660px) {
+      gap: $gap-XXXL;
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+  &__text {
+    padding: $padding-l 0 0 0;
+    color: $grey-light;
+    font-weight: $weight-regular;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  &__steps {
+    position: relative;
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: $gap-X;
+
+    @media screen and (max-width: 475px) {
+      @include flex-column;
+      align-items: center;
+    }
+  }
+
+  &__step {
+    width: 196px;
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: $gap-xm;
+  }
+
+  &__step-desc {
+    max-width: 12.25rem;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 3.125rem;
+  @include flex-row;
+  gap: 117px;
+
+  &__elem {
+    @include flex-row;
+    gap: 19px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    display: none;
+  }
+}

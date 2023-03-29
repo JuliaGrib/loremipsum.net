@@ -1,0 +1,11 @@
+.text {
+  font-size: 1.25rem;
+
+  &_bold {
+    font-weight: $weight-bold;
+  }
+
+  &_range {
+    color: $white;
+  }
+}

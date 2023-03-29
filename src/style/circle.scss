@@ -1,0 +1,10 @@
+.circle {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.3rem solid $main-color-dark;
+  border-radius: 50%;
+  background-color: $main-color;
+}

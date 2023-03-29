@@ -1,0 +1,35 @@
+.title {
+  margin: 0;
+
+  &_banner {
+    max-width: 38.4rem;
+    font-weight: $weight-bold;
+    font-size: 3rem;
+    line-height: 3.6rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+
+    @media screen and (max-width: 620px) {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  &_main-color {
+    color: $main-color;
+  }
+
+  &_order {
+    font-size: 2.25rem;
+    line-height: 2.6rem;
+    color: $white;
+
+    @media screen and (max-width: 660px) {
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+    }
+  }
+}

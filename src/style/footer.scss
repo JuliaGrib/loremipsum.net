@@ -1,0 +1,88 @@
+.footer {
+  background-color: $bg-grey;
+  font-size: 0.8rem;
+
+  &__wrapper {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap-xm;
+    padding: $padding-l 0;
+    color: $white;
+
+    @media screen and (max-width: 1110px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__copywrite {
+    position: relative;
+    &:after {
+      content: '';
+      @include after;
+    }
+
+    @media screen and (max-width: 1110px) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__pay {
+    position: relative;
+    @include flex-row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $gap-XL;
+    color: $grey-light;
+
+    &:after {
+      content: '';
+      @include after;
+    }
+
+    @media screen and (max-width: 1110px) {
+      &:after {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: $gap-xm;
+    }
+
+    @media screen and (max-width: 425px) {
+      @include flex-column;
+      align-items: flex-start;
+    }
+  }
+
+  &__elem {
+    @include flex-row;
+    align-items: center;
+    gap: $padding-s;
+  }
+
+  &__contacts {
+    @include flex-row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $gap-XL;
+
+    @media screen and (max-width: 768px) {
+      gap: $padding-sm;
+    }
+
+    @media screen and (max-width: 425px) {
+      @include flex-column;
+      align-items: flex-start;
+    }
+  }
+}

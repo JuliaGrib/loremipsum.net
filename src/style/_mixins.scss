@@ -1,0 +1,19 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin after {
+  width: 0.0625rem;
+  height: 1.125rem;
+  display: block;
+  position: absolute;
+  top: -0.125rem;
+  right: -2.18rem;
+  background-color: $white;
+}

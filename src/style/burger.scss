@@ -1,0 +1,37 @@
+.burger {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: -100%;
+  width: 70vw;
+  height: 100vh;
+  background-color: $bg-grey;
+  transition: 0.8s all;
+
+  &_active {
+    right: 0;
+    transition: 0.8s all;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: $gap-xm;
+    padding: 6.2rem 0 0 $padding-xl;
+    list-style: none;
+  }
+}
+
+.burger-icon {
+  display: none;
+  position: relative;
+  z-index: 5000;
+  transition: 0.8s all;
+
+  &_active {
+    transform: rotate(90deg);
+  }
+
+  @media screen and (max-width: 680px) {
+    display: block;
+  }
+}
