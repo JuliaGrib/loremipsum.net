@@ -8,7 +8,7 @@
   cursor: pointer;
 
   &_banner {
-    width: 183px;
+    width: 11rem;
     border: none;
   }
 
@@ -29,7 +29,7 @@
   }
 
   &_form {
-    max-width: 370px;
+    max-width: 23rem;
     grid-column: 2/3;
     border: 1px solid $white;
 

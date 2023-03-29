@@ -9,14 +9,28 @@ $bg-grey: #3d4050;
 $bg-light-grey: rgba(255, 255, 255, 0.85);
 
 $padding: 1rem;
+$padding-xs: calc(($padding) * 0.625);
+$padding-s: calc(($padding) * 0.75);
+$padding-sm: calc(($padding) * 1.25);
 $padding-m: calc(($padding) * 1.5);
 $padding-l: calc(($padding) * 1.85);
+$padding-xl: calc(($padding) * 2);
 
 $gap: 1rem;
+$gap-xs: calc(($gap) * 0.625);
+$gap-xm: calc(($gap) * 1.25);
 $gap-m: calc(($gap) * 1.5);
+$gap-X: calc(($gap) * 2);
+$gap-XL: calc(($gap) * 2.5);
 $gap-XXXL: calc(($gap) * 3.75);
+$gap-XXXXL: calc(($gap) * 4);
+$gap-XXXXXL: calc(($gap) * 5);
 
 $transition: 0.3s;
 
 $border-radius: 4px;
 $border-radius-s: 3px;
+
+$weight-regular: 400;
+$weight-semi-bold: 600;
+$weight-bold: 700;

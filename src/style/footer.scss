@@ -1,14 +1,14 @@
 .footer {
   background-color: $bg-grey;
-  font-size: 13px;
+  font-size: 0.8rem;
 
   &__wrapper {
     @include flex-row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 30px 0;
+    gap: $gap-xm;
+    padding: $padding-l 0;
     color: $white;
 
     @media screen and (max-width: 1110px) {
@@ -25,13 +25,7 @@
     position: relative;
     &:after {
       content: '';
-      width: 1px;
-      height: 18px;
-      display: block;
-      position: absolute;
-      top: -2px;
-      right: -35px;
-      background-color: $white;
+      @include after;
     }
 
     @media screen and (max-width: 1110px) {
@@ -46,18 +40,12 @@
     @include flex-row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 38px;
+    gap: $gap-XL;
     color: $grey-light;
 
     &:after {
       content: '';
-      width: 1px;
-      height: 18px;
-      display: block;
-      position: absolute;
-      top: 0px;
-      right: -35px;
-      background-color: $white;
+      @include after;
     }
 
     @media screen and (max-width: 1110px) {
@@ -67,7 +55,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      gap: 20px;
+      gap: $gap-xm;
     }
 
     @media screen and (max-width: 425px) {
@@ -79,17 +67,17 @@
   &__elem {
     @include flex-row;
     align-items: center;
-    gap: 12px;
+    gap: $padding-s;
   }
 
   &__contacts {
     @include flex-row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 38px;
+    gap: $gap-XL;
 
     @media screen and (max-width: 768px) {
-      gap: 20px;
+      gap: $padding-sm;
     }
 
     @media screen and (max-width: 425px) {

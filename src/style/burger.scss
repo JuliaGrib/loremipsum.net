@@ -13,8 +13,8 @@
 
   &__list {
     @include flex-column;
-    gap: 20px;
-    padding: 100px 0 0 30px;
+    gap: $gap-xm;
+    padding: 6.2rem 0 0 $padding-xl;
     list-style: none;
   }
 }
