@@ -49,6 +49,23 @@
     color: $black-light;
   }
 
+  &:-moz-placeholder {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: $black-light;
+  }
+
+  &::-moz-placeholder {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: $black-light;
+  }
+  &:-ms-input-placeholder {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: $black-light;
+  }
+
   &:focus-visible {
     outline: none;
   }
@@ -60,6 +77,7 @@
 
 .select {
   position: relative;
+  z-index: 1;
   height: 3rem;
   padding: $padding-s $padding-xs;
   border: 0.0625rem solid $white;
@@ -67,10 +85,6 @@
   background-color: $bg-light-grey;
   transition: $transition;
   cursor: pointer;
-
-  &:hover {
-    background-color: $grey-light;
-  }
 
   &_active {
     background: $dark-grey-transparent;
@@ -115,13 +129,12 @@
     background-color: $black-light;
     max-height: 13.75rem;
     overflow-y: scroll;
+    scrollbar-color: $main-color $black-ligth-second;
+    scrollbar-width: thin;
+    -moz-appearance: none;
 
     &_active {
       display: grid;
-    }
-
-    &::-webkit-scrollbar {
-      width: 0;
     }
 
     &::-webkit-scrollbar {
@@ -139,12 +152,9 @@
       background-color: $main-color;
     }
 
-    &::-moz--scrollbar {
-      width: 0;
-    }
-
-    &::-moz--scrollbar {
-      width: 0;
+    ::-moz-scrollbar {
+      width: 0px;
+      height: 0px;
     }
 
     &::-moz--scrollbar {
@@ -163,10 +173,6 @@
     }
 
     &::-ms-scrollbar {
-      width: 0;
-    }
-
-    &::-ms-scrollbar {
       width: 7px;
       border-radius: 0.18rem;
       background: $black-ligth-second;
@@ -175,10 +181,6 @@
     &::-ms-scrollbar-thumb {
       border-radius: 3px;
       background-color: $main-color;
-    }
-
-    &::-o--scrollbar {
-      width: 0;
     }
 
     &::-o--scrollbar {
@@ -226,7 +228,21 @@ input[type='range'] {
     appearance: none;
     cursor: pointer;
     width: 1.43rem;
+    height: 1.43rem;
+    background: $main-color;
+    border: 0.18rem solid $main-color-dark;
+    border-radius: 50%;
+  }
 
+  &::-moz-range-track {
+    background: $grey-transparent;
+    border: 0.0625rem solid $white;
+    height: 0.3rem;
+    border-radius: 0.3rem;
+  }
+  &::-moz-range-thumb {
+    cursor: pointer;
+    width: 1.43rem;
     height: 1.43rem;
     background: $main-color;
     border: 0.18rem solid $main-color-dark;

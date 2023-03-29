@@ -8,4 +8,5 @@ burgerElem.forEach((elem) => elem.addEventListener('click', showBurger));
 function showBurger() {
   burger.classList.toggle('burger_active');
   document.body.classList.toggle('overflow');
+  burgerIcon.classList.toggle('burger-icon_active');
 }

@@ -25,6 +25,11 @@
   display: none;
   position: relative;
   z-index: 5000;
+  transition: 0.8s all;
+
+  &_active {
+    transform: rotate(90deg);
+  }
 
   @media screen and (max-width: 680px) {
     display: block;

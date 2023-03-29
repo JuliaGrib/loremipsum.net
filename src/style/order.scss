@@ -33,6 +33,7 @@
   }
 
   &__steps {
+    position: relative;
     @include flex-row;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,6 +47,7 @@
   }
 
   &__step {
+    width: 196px;
     @include flex-column;
     justify-content: center;
     align-items: center;
@@ -57,5 +59,21 @@
     max-width: 12.25rem;
     text-align: center;
     color: $white;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 3.125rem;
+  @include flex-row;
+  gap: 117px;
+
+  &__elem {
+    @include flex-row;
+    gap: 19px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    display: none;
   }
 }
