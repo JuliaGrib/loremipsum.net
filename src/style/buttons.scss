@@ -15,6 +15,11 @@
   &_main {
     background-color: $main-color;
     color: $white;
+    transition: $transition;
+
+    &:hover {
+      background-color: $main-color-dark;
+    }
   }
 
   &_secondary {

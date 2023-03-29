@@ -37,6 +37,11 @@
   border: 0.0625rem solid $white;
   border-radius: $border-radius-s;
   background-color: $bg-light-grey;
+  transition: $transition;
+
+  &:hover {
+    background-color: $grey-light;
+  }
 
   &::placeholder {
     font-size: 1.125rem;
@@ -62,6 +67,10 @@
   background-color: $bg-light-grey;
   transition: $transition;
   cursor: pointer;
+
+  &:hover {
+    background-color: $grey-light;
+  }
 
   &_active {
     background: $dark-grey-transparent;

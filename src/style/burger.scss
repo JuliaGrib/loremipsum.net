@@ -1,14 +1,16 @@
 .burger {
   position: fixed;
+  z-index: 2000;
   top: 0;
   right: -100%;
   width: 70vw;
   height: 100vh;
   background-color: $bg-grey;
-  transition: transition;
+  transition: 0.8s all;
 
   &_active {
     right: 0;
+    transition: 0.8s all;
   }
 
   &__list {
@@ -22,7 +24,7 @@
 .burger-icon {
   display: none;
   position: relative;
-  z-index: 1000;
+  z-index: 5000;
 
   @media screen and (max-width: 680px) {
     display: block;
